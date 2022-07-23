@@ -116,7 +116,7 @@ ORDER BY e.emp_no;
 This query displays employees who are eligible for the mentorship program. This query returns columns listing the first name, last name, birthdate, from date, to date, and title. The data is restructured from the employees table into a new table entitled mentorship_eligibilty. The data is then exported into a csv file in the data folder.
 ## Summary
 
-Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami.":
+Seeing the 63 % of the workforce is either retirment or mentorship eligible there will most likely be many positions to fill over the next 5-10 years. There may not exactly be enough people in the workforce to take care of the tasks or even come close to the amount of experience to fill these roles so quickly but what companies can do is try to best learn about what these employees did to be so successful/ having such long lasting careers to continue the tradition for future employees. Most likely the future generation is more computer savy/ efficent due to technologies and can catch on quickly helping companies continue to trend in the right direction by keeping revenues up.
 
 1) How many roles will need to be filled as the "silver tsunami" begins to make an impact?.
 
