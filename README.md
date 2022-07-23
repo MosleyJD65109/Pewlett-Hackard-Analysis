@@ -72,12 +72,12 @@ ORDER BY emp_no, title DESC;
 ```
 ![unique_titles](https://user-images.githubusercontent.com/104540261/180622111-47bdb654-7b16-43d2-853f-829587051498.png)
 
-This query uses the Dictinct command in combination with the groupby command to eliminate rows that contain the same information
+This query uses the Dictinct command in combination with the groupby command to eliminate rows that contain the same information.It will return columns for first names, last names, and title from the retirement_title table and create a unique_titles table. The data for each new table created is exported to a csv file in the data folder of this project.
 ### Third Query
 ```
 SELECT COUNT(ut.emp_no),
 ut.title
--- INTO retiring_titles
+INTO retiring_titles
 FROM unique_titles as ut
 GROUP BY title 
 ORDER BY COUNT(title) DESC;
@@ -85,7 +85,7 @@ ORDER BY COUNT(title) DESC;
 
 ![retiring_titles](https://user-images.githubusercontent.com/104540261/180622116-7d5ccf78-39ed-48d7-b0c5-27c6b01b6fcb.png)
 
-This query filters the employees who are about to retire by their job title.
+This query filters the employees who are about to retire by their job title. The filtered data form the unique_titles table is recreated in a new table entitled retiring_titles. The data from the new table is then exported into a csv file in the data folder.
 
 ## Deliverable 2: The Employees Eligible for the Mentorship Program
 
@@ -113,5 +113,17 @@ ORDER BY e.emp_no;
 ```
 ![mentorship_eligibility](https://user-images.githubusercontent.com/104540261/180623375-9938c77d-c959-4a99-825f-9db9d15f5f87.png)
 
-This query displays employees who are eligible for the mentorship program.
+This query displays employees who are eligible for the mentorship program. This query returns columns listing the first name, last name, birthdate, from date, to date, and title. The data is restructured from the employees table into a new table entitled mentorship_eligibilty. The data is then exported into a csv file in the data folder.
 ## Summary
+
+Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami.":
+
+1) How many roles will need to be filled as the "silver tsunami" begins to make an impact?.
+
+90,398 roles are in urgent need to be filled out as soon as the workforce starts retiring at any given time.
+
+2) Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+No, we have 1,940 employees who are eligible to participate in a mentorship program.
+
+
